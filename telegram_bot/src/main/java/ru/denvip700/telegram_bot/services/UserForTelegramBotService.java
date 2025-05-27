@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import ru.denvip700.telegram_bot.entity.UserForTelegramBot;
 import ru.denvip700.telegram_bot.repository.UserForTelegramBotRepository;
 
+import java.util.Optional;
+
 
 @Service
 public class UserForTelegramBotService {
@@ -20,7 +22,7 @@ public class UserForTelegramBotService {
         return userForTelegramBotRepository.findUserForTelegramBotByFirstName(name);
     }
 
-    public UserForTelegramBot findUserForTelegramBotByUserName(String name) {
+    public Optional<UserForTelegramBot> findUserForTelegramBotByUserName(String name) {
         return userForTelegramBotRepository.findUserForTelegramBotByUserName(name);
     }
 }

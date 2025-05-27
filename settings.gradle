@@ -1,2 +1,2 @@
 rootProject.name = 'E-finance'
-include 'telegram_bot'
+include 'eureka-server', 'telegram_bot'
